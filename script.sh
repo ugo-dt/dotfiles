@@ -11,7 +11,7 @@ if [ $(uname) = "Linux" ]; then
 							curl \
 							make \
 							python3 \
-							pip \
+							python3-pip \
 							vim \
 							zsh
 	# Norminette
