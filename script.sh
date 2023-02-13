@@ -13,6 +13,7 @@ if [ $(uname) = "Linux" ]; then
 							python3 \
 							python3-pip \
 							vim \
+							wget \
 							zsh
 	# Norminette
 	python3 -m pip install --upgrade pip setuptools
