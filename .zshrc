@@ -1,8 +1,8 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/ugo/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -72,11 +72,6 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
-
-export USER="ugdaniel"
-export MAIL="$USER@student.42.fr"
-
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -100,22 +95,5 @@ export MAIL="$USER@student.42.fr"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh
-#alias norminette="python3 -m norminette"
-alias norminette="/Library/Developer/CommandLineTools/usr/bin/python3 -m norminette"
+alias norminette="python3 -m norminette"
 alias re="make re"
-
-# Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
-export COCOS_CONSOLE_ROOT="/Users/ugo/Desktop/dev/cocos/cocos2d-x-4.0/tools/cocos2d-console/bin"
-export PATH=$COCOS_CONSOLE_ROOT:$PATH
-
-# Add environment variable COCOS_X_ROOT for cocos2d-x
-export COCOS_X_ROOT="/Users/ugo/Desktop/dev/cocos"
-export PATH=$COCOS_X_ROOT:$PATH
-
-# Add environment variable COCOS_TEMPLATES_ROOT for cocos2d-x
-export COCOS_TEMPLATES_ROOT="/Users/ugo/Desktop/dev/cocos/cocos2d-x-4.0/templates"
-export PATH=$COCOS_TEMPLATES_ROOT:$PATH
-
-# Python
-export PATH=/opt/homebrew/opt/python@3.9/Frameworks/Python.framework/Versions/3.9/bin:$PATH
-export PATH=/Users/ugo/Library/Python/3.8/bin:$PATH
