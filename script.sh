@@ -28,10 +28,7 @@ if [ ! -d "$ZSH" ]; then
     sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
 
-zsh -c "source ~/.zshrc && alias norminette" &> /dev/null
-if [ $? -ne 0 ]; then
-    echo 'alias norminette="python3 -m norminette' >> ~/.zshrc
-fi
+cp ./.zshrc ~/.zshrc
 
 # Vim
 mkdir -p ~/.vim/plugin ~/.vim/colors/ ~/.vim/autoload/
