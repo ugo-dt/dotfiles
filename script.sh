@@ -23,11 +23,6 @@ else
 	brew upgrade
 fi
 
-# Oh My Zsh
-if [ ! -d "$ZSH" ]; then
-    sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-fi
-
 wget -O ~/.zshrc https://raw.githubusercontent.com/ugo-dt/dotfiles/main/.zshrc --no-check-certificate
 
 # Vim
@@ -49,3 +44,8 @@ fi
 wget -O ~/.vim/autoload/onedark.vim https://raw.githubusercontent.com/ugo-dt/templates/main/.vim/autoload/onedark.vim --no-check-certificate
 wget -O ~/.vim/colors/onedark.vim https://raw.githubusercontent.com/ugo-dt/templates/main/.vim/colors/onedark.vim --no-check-certificate
 ### echo '\n" onedark.vim theme\ncolorscheme onedark' >> ~/.vimrc
+
+# Oh My Zsh
+if [ ! -d "$ZSH" ]; then
+    sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+fi
