@@ -29,7 +29,6 @@ if [ ! -d "$ZSH" ]; then
 fi
 
 wget -O ~/.zshrc https://raw.githubusercontent.com/ugo-dt/dotfiles/main/.zshrc --no-check-certificate
-source ~/.zshrc
 
 # Vim
 mkdir -p ~/.vim/plugin ~/.vim/colors/ ~/.vim/autoload/
