@@ -28,7 +28,7 @@ if [ ! -d "$ZSH" ]; then
     sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
 
-cp ./.zshrc ~/.zshrc
+cp ./.zshrc ~/.zshrc && source ~/.zshrc
 
 # Vim
 mkdir -p ~/.vim/plugin ~/.vim/colors/ ~/.vim/autoload/
