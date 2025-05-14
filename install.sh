@@ -26,9 +26,8 @@ fi
 wget -O ~/.zshrc https://raw.githubusercontent.com/ugo-dt/dotfiles/main/zshrc --no-check-certificate
 
 if [ $(uname -a | grep -q "microsoft-standard-WSL2")]; then
-	wget -O ~/.zshrc https://raw.githubusercontent.com/ugo-dt/dotfiles/main/win_zshrc --no-check-certificate
 	echo 'alias start="/bin/bash ~/.win_start.sh"' >> ~/.zshrc
-	wget -O ~/.win_start.sh https://raw.githubusercontent.com/ugo-dt/dotfiles/main/wsl2/win_zshrc --no-check-certificate
+	wget -O ~/.win_start.sh https://raw.githubusercontent.com/ugo-dt/dotfiles/main/wsl2/win_start.sh --no-check-certificate
 fi
 
 # Vim
