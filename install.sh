@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e
+set -eux
 
 if [ $(uname) = "Linux" ]; then
 	sudo apt-get -y update
@@ -16,8 +16,8 @@ if [ $(uname) = "Linux" ]; then
 							wget \
 							zsh
 	# Norminette
-	python3 -m pip install --upgrade pip setuptools
-	python3 -m pip install norminette
+	# python3 -m pip install --upgrade pip setuptools
+	# python3 -m pip install norminette
 else
 	brew update
 	brew upgrade
@@ -25,7 +25,7 @@ fi
 
 wget -O ~/.zshrc https://raw.githubusercontent.com/ugo-dt/dotfiles/main/zshrc --no-check-certificate
 
-if [ $(uname -a | grep -q "microsoft-standard-WSL2")]; then
+if uname -a | grep -q "microsoft-standard-WSL2"; then
 	echo 'alias start="/bin/bash ~/.win_start.sh"' >> ~/.zshrc
 	wget -O ~/.win_start.sh https://raw.githubusercontent.com/ugo-dt/dotfiles/main/wsl2/win_start.sh --no-check-certificate
 fi
